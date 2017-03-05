@@ -27,6 +27,16 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['smarthomie.herokuapp.com']
 
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'youremail@gmail.com' 
+#EMAIL_HOST_PASSWORD = 'yourpassword' 
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+#DEFAULT_FROM_EMAIL = "Justin <hungrypy@gmail.com>"
+
+
+#ADMINS = [('Justin', EMAIL_HOST_USER)]
+#MANAGERS = ADMINS
 
 # Application definition
 
@@ -137,4 +147,4 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_URL = "/media/"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root")
+MEDIA_ROOT = os.path.join(BASE_DIR, "live-static", "media-root")

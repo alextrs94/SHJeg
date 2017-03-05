@@ -25,8 +25,18 @@ SECRET_KEY = '+1w#-#fto=skfh=@^m*qke1krca%)$lb*ac+s0inn^mjy)75&v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['smarthomie.herokuapp.com']
+ALLOWED_HOSTS = ['smarthomie.herokuapp.com', '.knockhq.com']
 
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'youremail@gmail.com' 
+#EMAIL_HOST_PASSWORD = 'yourpassword' 
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+#DEFAULT_FROM_EMAIL = "Justin <hungrypy@gmail.com>"
+
+
+#ADMINS = [('Justin', EMAIL_HOST_USER)]
+#MANAGERS = ADMINS
 
 # Application definition
 
