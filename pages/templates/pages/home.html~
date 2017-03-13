@@ -30,33 +30,29 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Welcome to SMART HOMIE !</h1>
-        <p>Aici mi-am facut talentul.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h1>{{ page_obj.title }}</h1>
+        <p>{{ page_obj.title_description|linebreaks }}</p>
+        {% if title_btn_url %}
+        <p><a class="btn btn-primary btn-lg" href="{{ title_btn_url }}" role="button">{{ title_btn }}</a></p>
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Bloc1</h2>
-          <p>Aici scriu ceva interesant ..  </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Bloc2</h2>
-          <p>Aici este altceva interesant... </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
+              <div class="col-md-4">
           <h2>Join us</h2>
            <p>
            <form method='POST' action=''>{% csrf_token %}
            {{ form.as_p }}
+           <input type='submit' value='Join' class='btn btn-default' />
+           </form>
            </p>
-
         </div>
+      <div class='container'>
+        
+            {{ page_obj.content|safe }}
+      
       </div>
 
       <hr>
